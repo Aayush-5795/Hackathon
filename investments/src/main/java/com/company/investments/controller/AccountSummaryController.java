@@ -30,7 +30,6 @@ public class AccountSummaryController {
 	 */
 	private static final Logger logger = LoggerFactory.getLogger(AccountSummaryController.class);
 
-
 	@GetMapping("/{userId}/accounts")
 	public ResponseEntity<InvestmentAccountsResponseDto> getInvestmentAccounts(@PathVariable("userId")Long userId){
 		
@@ -42,7 +41,4 @@ public class AccountSummaryController {
 		return new ResponseEntity<InvestmentAccountsResponseDto>(result, HttpStatus.OK);
 		
 	}
-	
-	
-
 }
